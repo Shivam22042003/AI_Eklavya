@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style2.css') }}"
+    />
+    <title>Meditation Trainer</title>
+  </head>
+
+  <body>
+    <!--Heading-->
+    <h1>AI Eklavya</h1>
+    <!-- Outer container that is used to animate-->
+    <div class="container" id="container">
+      <!--Middle circle-->
+      <div class="circle"></div>
+      <!--Text-->
+      <p id="text"></p>
+
+      <!--Pointer containing div-->
+      <div class="pointer-container">
+        <!--Empty span to create round pointer circle-->
+        <span class="pointer"></span>
+      </div>
+
+      <!--Gradient circle-->
+      <div class="gradient-circle"></div>
+      <!--Gradient blur-->
+      <div class="gradient-circle-blur"></div>
+    </div>
+
+    <!--Audio for effects-->
+    <audio
+      src="{{ url_for('static', filename='audio/breathin.mp3') }}"
+      id="breathein"
+    ></audio>
+    <audio
+      src="{{ url_for('static', filename='audio/hold.mp3') }}"
+      id="hold"
+    ></audio>
+    <audio
+      src="{{ url_for('static', filename='audio/breatheout.mp3') }}"
+      id="breatheout"
+    ></audio>
+
+    <!--Specifying the javascript file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

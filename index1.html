@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Eklavya</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+    <!-- Google fonts adding by link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,500;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<!-- ========Navbar=============  -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<nav>
+    <div class="container nav__container">
+        <a href="#" class="logo">AI EKlavya</a>
+        <ul class="nav__menu">
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="criticalthinking2.html">Games</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="types.html">Yoga</a></li>
+            <li><a href="./medit/Mediatation trainer 1/index.html">Meditation</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+    <!-- ===========    Header    ==================-->
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Why is stress relief most important.</h1>
+                <p>
+                    Playing games helps in stress management by providing distraction from stressors, releasing feel-good neurotransmitters, fostering social interaction, and engaging cognitive functions, ultimately promoting relaxation and mood improvement.
+                </p>
+                <a href="#korses" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="{{ url_for('static', filename='custom/problemsolving.gif') }}" alt="header__right-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="categories">
+        <div class="categories__container" id="korses">
+            <div class="categories__left">
+                <h1>
+                    This game effectively alleviates stress through engaging gameplay and visually appealing design.
+                </h1>
+            </div>
+            <div class="categories__right">
+                <article class="category cat-1">
+                    <img
+                    src="{{ url_for('static',filename='custom/criticalthinking.gif') }}"
+                    class="img-fluid"
+                    alt=""
+                  />
+                    <span class="category__icon">
+                        <a href="https://www.mentalup.co/img/new-icon-co/conditional-expressions.pngv">
+                            <h3>Critical Thinking</h3>
+                        </a>
+                    </span>
+                    <p>
+                        "Quizzes divert the mind by offering engaging challenges, stimulating cognitive activity, and providing enjoyable distraction."
+                    </p>
+                    <a href="criticalthinking2.html" class="btn btn-primary btn-class">PLAY</a>
+                </article>
+                <article class="category cat-2">
+                    <img
+                    src="{{ url_for('static',filename='custom/criticalthinking2.png') }}"
+                    alt=""
+                  />
+                    <span class="category__icon">
+                        <a href="./criticalthinkingchildren.css">
+                            <h3>Mediation</h3>
+                        </a>
+                    </span>
+                    <p>"Meditation aids stress management by promoting relaxation, mindfulness, and inner peace through focused breathing and mental clarity."</p>
+                    <a href="types.html" class="btn btn-primary btn-class">PLAY</a>
+                </article>
+                <article class="category cat-3">
+                    <img
+                    src="{{ url_for('static',filename='custom/Research2.png') }}"
+                    alt=""
+                  />
+                    <span class="category__icon">
+                        <a href="">
+                            <h3>Yoga Practice</h3>
+                        </a>
+                    </span>
+                    <p>"Yoga practice is essential for stress management, fostering physical wellness and mental tranquility through mindful movement and breath awareness."</p>
+                    <a href="yoga.html" class="btn btn-primary btn-class">PLAY</a>
+                </article>
+            </div>
+        </div>
+        <div class="categories__container">
+            <div class="categories__right" id="categories_right">
+                <article class="category cat-4">
+                    <img src="{{ url_for('static', filename='custom/problemsolving.gif') }}" alt="">
+                    <span class="category__icon">
+                        <a href="https://www.mentalup.co/img/new-icon-co/conditional-expressions.png">
+                            <h3>Contest</h3>
+                        </a>
+                    </span>
+                    <p>Win Really Goodies by taking part in the contest</p>
+                    <a href="secondary.html" class="btn btn-primary btn-class">PLAY</a>
+                </article>
+                <article class="category cat-5">
+                    <img src="{{ url_for('static', filename='custom/Hypothesis.png') }}" alt="">
+                    <span class="category__icon">
+                        <a href="">
+                            <h3>Research</h3>
+                        </a>
+                    </span>
+                    <p>"Research help to motivate you and help you to achieve something in life" </p>
+                    <a href="research.html" class="btn btn-primary btn-class">PLAY</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- ========End of the categorieos======= -->
+    <!-- </div> -->
+    <!-- </section> -->
+
+
+
+    <!-- =========    Footer    ========== -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo logo" style="color: white;">AI Eklavya</a>
+
+            </div>
+
+            <div class="footer__2">
+                <h4>Helpful Links</h4>
+                <ul class="helpfullinks">
+                    <li> <a href="">Home</a> </li>
+                    <li> <a href="">About</a> </li>
+                    <li> <a href="">Courses</a> </li>
+                    <li> <a href="">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and conditions</a></li>
+                    <li><a href="">refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <ul class="cpntact">
+                    <li><a href="">91-120123456</a></li>
+                    <li><a href="">aieklavya@gmail.com</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer__socials">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer__copyright">
+                <small>Copyright</small>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+
+</body>
+
+</html>

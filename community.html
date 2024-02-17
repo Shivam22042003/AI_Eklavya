@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Community</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/community.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Patient Community</h1>
+    </header>
+    <main>
+      <section id="post-form">
+        <h2>Create a New Post</h2>
+        <form id="new-post-form">
+          <textarea
+            id="post-content"
+            placeholder="Write your post here"
+          ></textarea>
+          <input type="file" id="post-image" accept="image/*" />
+          <!-- Input for uploading images -->
+          <label for="anonymous-post">Post Anonymously:</label>
+          <input type="checkbox" id="anonymous-post" name="anonymous-post" />
+          <label for="post-section">Select Section:</label>
+          <select id="post-section">
+            <option value="general">General</option>
+            <option value="health">Health</option>
+            <option value="support">Support</option>
+            <!-- Add more options as needed -->
+          </select>
+          <button type="submit">Post</button>
+        </form>
+      </section>
+      <section id="posts">
+        <h2>Recent Posts</h2>
+        <div id="post-filters">
+          <button class="filter-button" data-section="all">All</button>
+          <button class="filter-button" data-section="general">General</button>
+          <button class="filter-button" data-section="health">Health</button>
+          <button class="filter-button" data-section="support">Support</button>
+          <!-- Add more filter buttons for additional sections -->
+        </div>
+        <ul id="post-list">
+          <!-- Posts will be dynamically added here using JavaScript -->
+        </ul>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
